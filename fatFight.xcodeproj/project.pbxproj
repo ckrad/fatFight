@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021261EF1AF4F79300E389B7 /* untilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021261EE1AF4F79300E389B7 /* untilies.swift */; };
+		022796A41AEB6E8900C7B11A /* setGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022796A21AEB6E8900C7B11A /* setGoalViewController.swift */; };
+		022796A51AEB6E8900C7B11A /* todayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022796A31AEB6E8900C7B11A /* todayViewController.swift */; };
 		027703D51AE932FC0071686F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027703D41AE932FC0071686F /* AppDelegate.swift */; };
 		027703D71AE932FC0071686F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027703D61AE932FC0071686F /* ViewController.swift */; };
 		027703DA1AE932FC0071686F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027703D81AE932FC0071686F /* Main.storyboard */; };
@@ -26,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021261EE1AF4F79300E389B7 /* untilies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = untilies.swift; sourceTree = "<group>"; };
+		022796A21AEB6E8900C7B11A /* setGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setGoalViewController.swift; sourceTree = "<group>"; };
+		022796A31AEB6E8900C7B11A /* todayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todayViewController.swift; sourceTree = "<group>"; };
+		022796A61AEB85DC00C7B11A /* thought.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = thought.playground; sourceTree = "<group>"; };
 		027703CF1AE932FC0071686F /* fatFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fatFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027703D31AE932FC0071686F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027703D41AE932FC0071686F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,11 +85,15 @@
 			isa = PBXGroup;
 			children = (
 				027703D41AE932FC0071686F /* AppDelegate.swift */,
+				022796A21AEB6E8900C7B11A /* setGoalViewController.swift */,
+				022796A31AEB6E8900C7B11A /* todayViewController.swift */,
 				027703D61AE932FC0071686F /* ViewController.swift */,
 				027703D81AE932FC0071686F /* Main.storyboard */,
 				027703DB1AE932FC0071686F /* Images.xcassets */,
 				027703DD1AE932FC0071686F /* LaunchScreen.xib */,
 				027703D21AE932FC0071686F /* Supporting Files */,
+				022796A61AEB85DC00C7B11A /* thought.playground */,
+				021261EE1AF4F79300E389B7 /* untilies.swift */,
 			);
 			path = fatFight;
 			sourceTree = "<group>";
@@ -212,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022796A51AEB6E8900C7B11A /* todayViewController.swift in Sources */,
 				027703D71AE932FC0071686F /* ViewController.swift in Sources */,
+				021261EF1AF4F79300E389B7 /* untilies.swift in Sources */,
+				022796A41AEB6E8900C7B11A /* setGoalViewController.swift in Sources */,
 				027703D51AE932FC0071686F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +350,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fatFight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cdbfeb1a-b175-4f49-b31a-069972316f16";
 			};
 			name = Debug;
 		};
@@ -346,9 +363,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = fatFight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cdbfeb1a-b175-4f49-b31a-069972316f16";
 			};
 			name = Release;
 		};
@@ -405,6 +425,7 @@
 				027703F01AE932FC0071686F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		027703F11AE932FC0071686F /* Build configuration list for PBXNativeTarget "fatFightTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				027703F31AE932FC0071686F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
